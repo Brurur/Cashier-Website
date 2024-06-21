@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sneakers Vault</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-auto bg-light sticky-top">
+            <div class="d-flex flex-sm-column flex-row flex-nowrap bg-light align-items-center sticky-top">
+                <a href="/" class="d-block p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
+                    <img src="./assets/img/ph_sneaker-move-fill.png" width="50px" height="50px" alt="">       
+                </a>
+                <br><br><br>
+                <ul class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center align-items-center">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-3 px-2">
+                            <i class="bi bi-grid-fill h4"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-3 px-2">
+                            <i class="bi bi-person-circle h4"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link py-3 px-2">
+                            <i class="bi bi-three-dots h4"></i>
+                        </a>
+                    </li>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <li>
+                        <a href="#" class="nav-link py-3 px-2">
+                            <i class="bi bi-box-arrow-right h4"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm p-3 min-vh-100">
+            <!-- content -->
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2><b>&emsp;Sneakers Vault</b></h2>
+                <form class="d-flex">
+                    <input id="searchInput" class="form-control me-2" type="search" placeholder="Search product..." aria-label="Search" onkeyup="filterCards()">
+                </form>
+            </div>
+            <a>&emsp;&emsp;&nbsp;Cashier ID #00031</a>
+
+            <br><br><br>
+
+            <div id="cardsContainer" class="container d-flex justify-content-center mt-50 mb-50">
+        
+                <div class="row">
+                    <div class="col-md-4 mt-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-img-actions">                     
+                                    <img src="./assets/img/Nike Air Force 1 Mid.jpg" class="card-img img-fluid" width="96" height="350" alt="">            
+                                </div>
+                            </div>
+                            <div class="card-body bg-light">
+                                <div class="mb-2">
+                                    <h5 class="font-weight-semibold mb-2">
+                                        <a>Nike - Air Force 1 Mid</a>
+                                    </h5>
+                                </div>
+                                <h3 class="mb-0 font-weight-semibold">$134.99</h3>  
+                                <div class="text-right">
+                                    <button type="button" class="btn btn-primary" onclick="addToCart(this)"><i class="bi bi-cart-plus-fill"></i> Add to cart</button>       
+                                </div>                                            
+                            </div>
+                        </div>             
+                    </div> 
+                    
+                    <div class="col-md-4 mt-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-img-actions">                     
+                                    <img src="./assets/img/Nike Dunk High By You.jpg" class="card-img img-fluid" width="96" height="350" alt="">            
+                                </div>
+                            </div>
+                            <div class="card-body bg-light">
+                                <div class="mb-2">
+                                    <h5 class="font-weight-semibold mb-2">
+                                        <a>Nike - Dunk High By You</a>
+                                    </h5>
+                                </div>
+                                <h3 class="mb-0 font-weight-semibold">$149.99</h3>  
+                                <div class="text-right">
+                                    <button type="button" class="btn btn-primary" onclick="addToCart(this)"><i class="bi bi-cart-plus-fill"></i> Add to cart</button>       
+                                </div>                                            
+                            </div>
+                        </div>             
+                    </div> 
+
+                    <div class="col-md-4 mt-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-img-actions">                     
+                                    <img src="./assets/img/Nike Revolution 6.png" class="card-img img-fluid" width="96" height="350" alt="">            
+                                </div>
+                            </div>
+                            <div class="card-body bg-light">
+                                <div class="mb-2">
+                                    <h5 class="font-weight-semibold mb-2">
+                                        <a>Nike - Revolution 6</a>
+                                    </h5>
+                                </div>
+                                <h3 class="mb-0 font-weight-semibold">$49.99</h3>  
+                                <div class="text-right">
+                                    <button type="button" class="btn btn-primary" onclick="addToCart(this)"><i class="bi bi-cart-plus-fill"></i> Add to cart</button>       
+                                </div>                                            
+                            </div>
+                        </div>             
+                    </div> 
+
+                    <div class="col-md-4 mt-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-img-actions">                     
+                                    <img src="./assets/img/Adidas Forum Mid Shoes.jpg" class="card-img img-fluid" width="96" height="350" alt="">            
+                                </div>
+                            </div>
+                            <div class="card-body bg-light">
+                                <div class="mb-2">
+                                    <h5 class="font-weight-semibold mb-2">
+                                        <a>Adidas - Forum Mid</a>
+                                    </h5>
+                                </div>
+                                <h3 class="mb-0 font-weight-semibold">$49.99</h3>  
+                                <div class="text-right">
+                                    <button type="button" class="btn btn-primary" onclick="addToCart(this)"><i class="bi bi-cart-plus-fill"></i> Add to cart</button>       
+                                </div>                                            
+                            </div>
+                        </div>             
+                    </div> 
+
+                    <div class="col-md-4 mt-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-img-actions">                     
+                                    <img src="./assets/img/Adidas Superstar.jpg" class="card-img img-fluid" width="96" height="350" alt="">            
+                                </div>
+                            </div>
+                            <div class="card-body bg-light">
+                                <div class="mb-2">
+                                    <h5 class="font-weight-semibold mb-2">
+                                        <a>Adidas - Superstar</a>
+                                    </h5>
+                                </div>
+                                <h3 class="mb-0 font-weight-semibold">$99.99</h3>  
+                                <div class="text-right">
+                                    <button type="button" class="btn btn-primary" onclick="addToCart(this)"><i class="bi bi-cart-plus-fill"></i> Add to cart</button>       
+                                </div>                                            
+                            </div>
+                        </div>             
+                    </div> 
+
+                    <div class="col-md-4 mt-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-img-actions">                     
+                                    <img src="./assets/img/Adidas Forum Low.jpg" class="card-img img-fluid" width="96" height="350" alt="">            
+                                </div>
+                            </div>
+                            <div class="card-body bg-light">
+                                <div class="mb-2">
+                                    <h5 class="font-weight-semibold mb-2">
+                                        <a>Adidas - Forum Low</a>
+                                    </h5>
+                                </div>
+                                <h3 class="mb-0 font-weight-semibold">$89.99</h3>  
+                                <div class="text-right">
+                                    <button type="button" class="btn btn-primary" onclick="addToCart(this)"><i class="bi bi-cart-plus-fill"></i> Add to cart</button>       
+                                </div>                                     
+                            </div>
+                        </div>             
+                    </div> 
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-auto bg-light sticky-top">
+            <div class="d-flex flex-sm-column flex-row flex-nowrap bg-light align-items-center sticky-top">
+                <ul class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center align-items-center">
+                    <br><h3>Current Order</h3>
+                    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+                    <div id="orderList" class="order-list">
+                        <!-- Added items will be listed here -->
+                    </div>
+                    <div id="totalPrice" class="total-price">Total: $0.00</div>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <div class="orderButtons">
+                        <li>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary" onclick="printReceipt()"></i>&emsp;&emsp;&emsp;&emsp;Print Receipt&emsp;&emsp;&emsp;&emsp;</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="text-center">
+                                <a>&nbsp;</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-danger" onclick="refresh()"></i>&emsp;&emsp;&emsp;&emsp;Cancel Order&emsp;&emsp;&emsp;&emsp;</button>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+    function refresh() {
+        location.reload();
+    }
+
+    function filterCards() {
+        let input = document.getElementById('searchInput');
+        let filter = input.value.toLowerCase();
+        let cards = document.getElementById('cardsContainer').getElementsByClassName('card');
+        
+        for (let i = 0; i < cards.length; i++) {
+            let h5 = cards[i].getElementsByTagName('h5')[0];
+            let textValue = h5.textContent || h5.innerText;
+            
+            if (textValue.toLowerCase().indexOf(filter) > -1) {
+                cards[i].parentElement.style.display = "";
+            } else {
+                cards[i].parentElement.style.display = "none";
+            }
+        }
+    }
+
+    function addToCart(button) {
+        let card = button.closest('.card');
+        let name = card.querySelector('h5').innerText;
+        let priceText = card.querySelector('h3').innerText;
+        let price = parseFloat(priceText.replace('$', ''));
+
+        let orderList = document.getElementById('orderList');
+        let itemCount = orderList.getElementsByClassName('order-item').length + 1;
+        
+        let orderItem = document.createElement('div');
+
+        if (orderList.getElementsByClassName('order-item').length < 10) {
+            orderItem.className = 'order-item';
+            orderItem.innerHTML = `<p>${itemCount}. ${name}, <strong> ${priceText}</strong></p>`;
+            
+            orderList.appendChild(orderItem);
+            updateTotal(price);
+        } else {
+            alert('Maximum barang!');
+        }
+    }
+
+    function updateTotal(price) {
+        let totalElement = document.getElementById('totalPrice');
+        let currentTotal = parseFloat(totalElement.innerText.replace('Total: $', ''));
+        let newTotal = currentTotal + price;
+        totalElement.innerText = `Total: $${newTotal.toFixed(2)}`;
+    }
+
+    async function printReceipt() {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    // Add title at the top
+    doc.setFontSize(16); // Set the font size for the title
+    doc.text('Sneakers Vault', 105, 10, { align: 'center' }); // Centered title
+    doc.setFontSize(12); // Reset font size for the rest of the text
+
+    let orderItems = document.querySelectorAll('.order-item p');
+    let totalPrice = document.getElementById('totalPrice').innerText;
+    
+    let y = 20; // Start below the title
+    orderItems.forEach((item, index) => {
+        doc.text(item.innerText, 10, y);
+        y += 10;
+    });
+    
+    doc.text(totalPrice, 10, y + 10);
+
+    doc.save('Sneakers Vault Receipt.pdf');
+}
+
+</script>
+</body>
+</html>

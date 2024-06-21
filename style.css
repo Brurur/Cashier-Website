@@ -1,0 +1,21 @@
+.text-right {
+    text-align: right;
+  }
+
+.orderButtons {
+  width: 20%;
+  position: fixed;
+  bottom: 30px;
+}
+
+.total-price {
+  margin-top: 600px;
+  position: fixed;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.order-list {
+  position: fixed;
+  top: 80px;
+}
